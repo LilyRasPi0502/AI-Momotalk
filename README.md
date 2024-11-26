@@ -1,2 +1,2 @@
 # AI-Momotalk
-Base ollama momotalk AI chat
+Ollama based momotalk AI chat
