@@ -1,0 +1,45 @@
+.dli-camera-fill {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  position: relative;
+  width: 1.25em;
+  height: 0.85em;
+  background: currentColor;
+  border: 0.1em solid currentColor;
+  border-radius: 0.1em;
+  box-sizing: content-box;
+}
+
+.dli-camera-fill::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  width: 40%;
+  height: 0.1375em;
+  background: inherit;
+  border: 0.1em solid currentColor;
+  border-bottom: 0;
+  border-radius: 0.225em 0.225em 0 0;
+  box-sizing: content-box;
+  transform: translateX(-50%);
+}
+
+.dli-camera-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0.646em;
+  height: 0.646em;
+  border: 0.125em solid currentColor;
+  border-color: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0.39em -0.27em 0 -0.27em #fff;
+}

@@ -1,0 +1,90 @@
+.ProfileBox{ 
+  text-align: center;
+}
+.AvaBox{
+  display: flex;
+  justify-content: center; 
+}
+.ProAvatar{
+  position: relative;
+  background-color: #00FF00;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  top: 30px;
+}
+.ProImage{
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+}
+.ProName{
+  position: relative;
+  top: 40px;
+  color: black;
+  font-size: 20px;
+}
+.Signature{
+  position: relative;
+  top: 40px;
+  color: gray;
+  font-size: 20px;
+}
+.BirthDay{
+  text-align: center;
+  position: relative;
+  top: 50px;
+  width: 120px;
+  color: #6D7F83;
+  font-size: 20px;
+  border-radius: 25px;
+  border:2px gray solid;
+}
+.DataTable{
+  position: relative;
+  top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+table{
+  width: 80%;
+  background-color: #D5FF00;
+}
+table, th, td {
+  border: 1px solid;
+  border-radius: 20px;
+}
+tr{
+  background-color: #55FFFF;
+}
+tr:hover{
+  background-color: #7F70FF;
+}
+th{
+  width: 20%;
+}
+td{
+  width: 80%;
+  padding-left: 10px;
+}
+.chbut{
+  position: fixed;
+  height: auto;
+  bottom: 60px;
+  lefe: 0px;
+  width: calc((100% - 100px)/2);
+}
+.chbun{
+  position: relative;
+  background-color: lightpink;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  width: 120px;
+  border: none;
+  border-radius: 20px;
+  top: 50%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

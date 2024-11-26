@@ -1,0 +1,22 @@
+<div id="StudentListPanel" class="StudentListPanel">
+						<div id="StudentList-StudentBox" class="StudentList-StudentBox">
+							<div class="Avatar">
+								<image id="Avatar" src="Avatar/南部P.png" height="70px" width="70px" style="border-radius: 50%;">
+							</div>
+							<div>
+								<div id="Name" class="Name">南部P</div>
+								<div id="EasyMessageViewer" class="EasyMessageViewer">Test</div>
+							</div>
+						</div>
+						<div id="StudentList-StudentBox" class="StudentList-StudentBox">
+							<div class="Avatar">
+								<image id="Avatar" src="Avatar/南部P.png" height="70px" width="70px" style="border-radius: 50%;">
+							</div>
+							<div>
+								<div id="Name" class="Name">南部P</div>
+								<div id="EasyMessageViewer" class="EasyMessageViewer">Test</div>
+							</div>
+						</div>
+					</div>
+
+

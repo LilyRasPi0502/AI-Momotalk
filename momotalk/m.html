@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>🍑 Momotalk 🍑</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/icon.ico">
+		<link rel="stylesheet" type="text/css" href="m/Styles.css" />
+		<link rel="stylesheet" type="text/css" href="m/ChatUI.css" />
+		<link rel="stylesheet" type="text/css" href="m/Profile.css" />
+		<link rel="stylesheet" type="text/css" href="sw.css" />
+		<script src="m/MomoUI.js"></script>
+		<script src="m/ChatUI.js"></script>
+		<script src="m/Profile.js"></script>
+		<script src="Prompt.js"></script>
+		<script src=mmd.min.js></script>
+		<link rel="stylesheet" type="text/css" href="icon.css" />
+	</head>
+	<body>
+		<div class="MomoPanel">
+			<div class="TotalPositionCorrection TitleBar">
+				<h2 class="TitleFont">
+					<image src="img/TitleBar.png">
+					<image class="TitleHelp" style="pointer-events:auto;" src="img/TitleHelp.png" onclick="Help()">
+					<image class="TitleX" style="pointer-events:auto;" src="img/TitleBarX.png" onclick="Close()">
+				</h2>
+			</div>
+			<div class="TotalPositionCorrection Page">
+				<div class="PageBar">
+					<div class="PageIcon PageIconPro" id="PageIconPro" onclick="PageSelect(0)">
+						<image src="img/PageProfile1.png" id="PageProfile" style="width:80px;height:80px;">
+					</div>
+					<div class="PageIcon PageIconChat" id="PageIconChat" onclick="PageSelect(1)">
+						<font class="UnReadMessage" id="UnReadCount">&nbsp;0&nbsp;</font>
+						<input type="hidden" id="UnReadCountVa" value=0 onchange="On_MessageCallBack();">
+						<image src="img/PageChat1.png" id="PageChat" style="width:85px;height:70px;">
+					</div>
+					<div class="PageIcon PageIconChat" id="PageIconSet" style="padding-top: 10px;" onclick="PageSelect(2);">
+						<image src="img/Setting.png" id="SetIcon" style="filter: opacity(0.5);margin-top:10px;" width=80px height=80px id="PageChat">
+					</div>
+				</div>
+				<div id="MainPage" class="StudentList">
+					<div class="StudentListTitle">
+						<div id="StudentCount" class="StudentCount font"></div>
+						<div id="Filter" class="Filter font" onclick="Filter();">默認</div>
+						<div class="FilterAllow"></div>
+						<div class="Reverse font" onclick="Reverse();">
+							≡<image src="img/ReverseButton0.png" id="Reverse">
+							<input type="hidden" id="ReverseAllow" value="0">
+						</div>
+					</div>
+					<div id="StudentListPanel" class="StudentListPanel"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+<html>

@@ -1,0 +1,46 @@
+<div id="MessageBox" class="MessageBox">
+	<div class="Avatar">
+		<image id="Avatar" src="img/Bug.png" height="70px" width="70px" style="border-radius: 50%;">
+	</div>
+	<div>
+		<div id="Name" class="Name">
+			老師前端的蟲蟲♥
+		</div>
+		<div class="MessageAllow"></div>
+		<div id="MessageContent" class="MessageContent">早安</div><br>
+		<div id="MessageContent" class="MessageContent">早安</div><br>
+	</div>
+</div>
+<div id="MessageBox" class="MessageBox">
+	<div class="Avatar">
+		<image id="Avatar" src="img/Bug.png" height="70px" width="70px" style="border-radius: 50%;">
+	</div>
+	<div>
+		<div id="Name" class="Name">
+			老師前端的蟲蟲♥
+		</div>
+		<div class="MessageAllow"></div>
+		<div id="MessageContent" class="MessageContent">早安</div>
+	</div>
+</div>
+<div id="MessageBoxUser" class="MessageBoxUser">
+	<div id="MessageContentUser" class="MessageContentUser">早安</div>
+	<div class="MessageAllowUser"></div>
+</div>
+
+<div id="MessageBoxUser" class="MessageBoxUser">
+	<div id="MessageContentUser" class="MessageContentUser">早安</div>
+	<div class="MessageAllowUser"></div>
+</div>
+<div id="MessageBox" class="MessageBox">
+	<div class="Avatar">
+		<image id="Avatar" src="img/Bug.png" height="70px" width="70px" style="border-radius: 50%;">
+	</div>
+	<div>
+		<div id="Name" class="Name">
+			老師前端的蟲蟲♥
+		</div>
+		<div class="MessageAllow"></div>
+		<div id="MessageContent" class="MessageContent"><|typing|></div>
+	</div>
+</div>

@@ -1,0 +1,224 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+.MessageBox{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  top: 10px;
+}
+.Avatar{
+  position: relative;
+  background-color: #00FF00;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  top: 10px;
+  left: 10px;
+}
+.Name{
+  position: relative;
+  left: 30px;
+  top: 10px;
+  font-size: 40px;
+}
+.MessageAllow{
+  position: relative;
+  width: 0;
+  height: 0;
+  top: 36px;
+  left: 15px;
+  display: block;
+  border-left: 15px solid transparent;
+  border-bottom: 25px solid #4c5b6f;
+  border-right: 15px solid transparent;
+  transform: rotate(-90deg);
+}
+.MessageContent{
+  display: inline-block;
+  max-width: 80%;
+  position: relative;
+  background-color: #4c5b6f;
+  border-radius: 10px;
+  font-size: 40px;
+  color: #FFFFFF;
+  margin-top: 5px;
+  left: 30px;
+  width: auto;
+  height: auto;
+  padding-top: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 6px;
+}
+.MessageBoxUser{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  right: 10px;
+  top: 15px;
+}
+.MessageAllowUser{
+  position: relative;
+  width: 0;
+  height: 0;
+  top: 23px;
+  float: right;
+  right: 2px;
+  display: block;
+  border-left: 10px solid transparent;
+  border-bottom: 20px solid #4a8acb;
+  border-right: 10px solid transparent;
+  transform: rotate(90deg);
+}
+.MessageContentUser{
+  display: inline-block;
+  max-width: 600px;
+  position: relative;
+  background-color: #4a8acb;
+  border-radius: 10px;
+  font-size: 40px;
+  color: #FFFFFF;
+  margin-top: 5px;
+  //float: right;
+  width: auto;
+  height: auto;
+  padding-top: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 6px;
+}
+.MessageInputBox{
+  position:fixed;
+  bottom: 10px;
+  display: flex;
+  width: calc(100% - 160px);
+  border-radius: 0px 0px 10px 0px;
+  height: 120px;
+  background-color: #f6f6f6;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+.MessageInputText{
+  position: relative;
+  width: 80%;
+  height: auto;
+  border-radius: 30px;
+  padding-top: 7px;
+  padding-left: 15px;
+  padding-bottom: 7px;
+  resize: none;
+  font-size: 40px;
+  font-weight:bold;
+  font-family: monospace, arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+}
+.SubmitBox{
+  position: relative;
+  width: 20%;
+}
+.MessageInputSubmit{
+  position: relative;
+  float: right;
+  text-align: center;
+  border-radius: 5px;
+  width: 0;
+  height: 0;
+  display: block;
+  top: 30px;
+  right: 10px;
+  border-left: 34px solid transparent;
+  border-bottom: 60px solid #496fff;
+  border-right: 34px solid transparent;
+  transform: rotate(90deg);
+}
+
+.MessageTyping{
+  display: flex;
+  max-width: 250px;
+  position: relative;
+  background-color: #4c5b6f;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-top: 5px;
+  left: 30px;
+  width: 80px;
+  height: 50px;
+  padding-top: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 6px;
+}
+
+.TypingDot0{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 30px;
+  left: 4px;
+  background: lightgray;
+  border-radius: 50%;
+  animation-name: Dot0;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes Dot0{
+  0%	{top: 25px;}
+  10%	{top: 25px;}
+  40%	{top: 10px;}
+  60%	{top: 10px;}
+  90%	{top: 25px;}
+  100%	{top: 25px;}
+}
+.TypingDot1{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 30px;
+  left: 12px;
+  background: lightgray;
+  border-radius: 50%;
+  animation-name: Dot0;
+  animation-duration: 1.5s;
+  animation-delay: .2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes Dot1{
+  0%	{top: 25px;}
+  10%	{top: 25px;}
+  40%	{top: 10px;}
+  60%	{top: 10px;}
+  90%	{top: 25px;}
+  100%	{top: 25px;}
+}
+.TypingDot2{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 20px;
+  background: lightgray;
+  border-radius: 50%;
+  animation-name: Dot0;
+  animation-duration: 1.5s;
+  animation-delay: .4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes Dot2{
+  0%	{top: 25px;}
+  10%	{top: 25px;}
+  40%	{top: 10px;}
+  60%	{top: 10x;}
+  90%	{top: 25px;}
+  100%	{top: 25px;}
+}
+
+
