@@ -1,12 +1,19 @@
 # AI-Momotalk
+基於 ollama 的 momotalk AI 聊天
 Ollama based momotalk AI chat
 
 # 初衷(Original Intention)
-**原本我是拿來當作我的自我介紹網站然後把自己的人設寫成AI學生放上去的**
-
+**原本我是拿來當作我的自我介紹網站然後把自己的人設寫成AI學生放上去的**<br>
 [參考連結](https://www.minabep.uk/momotalk/?Stu=南部P#)
 
 # 如何架設(How to build)
+- 安裝http/https伺服器
+  - install http/https server:
+  ```
+  Windows:Nginx, apache, xampp
+  mac:我又沒錢買(I'm poor)
+  linux:nginx, apache
+  ```
 - 將ollama安裝至電腦上(install ollama):
   - [ollama](https://github.com/ollama/ollama)
 - 複製此儲存庫至伺服器目錄下(Copy to server directory)
