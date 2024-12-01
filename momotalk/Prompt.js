@@ -74,7 +74,7 @@ function Filter(){
 function MessageInput(){
 	Message = document.getElementById("MessageInputText").value;
 	document.getElementById("MessageInputText").value = "";
-	return Message;//RemoveEmptyLine(Message);
+	return RemoveEmptyLine(Message);
 }
 function SubmitMessage(Message_ID){
 	MSG = MessageInput();
@@ -139,15 +139,27 @@ function Genarate(Message_ID){
 
 }
 function RemoveEmptyLine(Str, Char="\n"){
+    //console.log("Str="+Str);
 	lines = Str.split("\n");
 	Str = [];
-	for(line of lines)
-		if(line.trim() != "")Str.push(line);
+	for(i=0;i<lines.length;i++){//line of lines){
+		if(lines[i].length != 0){//((line.trim() != "") && ){
+		    console.log("len="+lines[i].length+"\tline="+lines[i]);
+		    Str.push(lines[i]);
+		}
+		else if(i<lines.length-1){
+		    if(lines[i+1].length != 0){
+                Str.push("");
+            }
+		}
+	}
+	if(Str[0].trim() == ""){
+	    Str.pop();
+	}
 	return Str.join(Char);
 }
 function RemoveDateTime(Content){
     Content = Content.replaceAll("\n", "<br>").replaceAll("<br><br>", "\n");
-    console.log(Content);
 	try{
 		return Content.split("Time:[")[0]+Content.split("Time:[")[1].split("]:: ")[1];
 	}
