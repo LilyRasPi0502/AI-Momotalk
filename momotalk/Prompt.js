@@ -138,12 +138,12 @@ function Genarate(Message_ID){
 	getText(Server+"api/chat", {"model": "gemma2", "messages": h, "stream": false, "Access-Control-Allow-Origin": "*", 'Access-Control-Allow-Headers': '*'}, Message_ID);
 
 }
-function RemoveEmptyLine(Str){
+function RemoveEmptyLine(Str, Char="\n"){
 	lines = Str.split("\n");
 	Str = [];
 	for(line of lines)
-		if((line.trim() != "")	&& (line.trim() != " "))Str.push(line);
-	return Str.join("\n");
+		if(line.trim() != "")Str.push(line);
+	return Str.join(Char);
 }
 function RemoveDateTime(Content){
 	try{
