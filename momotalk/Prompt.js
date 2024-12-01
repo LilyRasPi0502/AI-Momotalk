@@ -152,7 +152,7 @@ function RemoveEmptyLine(Str, Char="\n"){
             }
 		}
 	}
-	for(i=0;i<Str.length;i++){
+	for(i=0;i<=Str.length;i++){
 	    if(Str[i].length == 0){
 	    	//console.log("i="+i+"\tlen="+Str[i].length+"\tStr="+Str[i]);
 	        Str.splice(i,1);
