@@ -74,7 +74,7 @@ function Filter(){
 function MessageInput(){
 	Message = document.getElementById("MessageInputText").value;
 	document.getElementById("MessageInputText").value = "";
-	return RemoveEmptyLine(Message);
+	return Message;//RemoveEmptyLine(Message);
 }
 function SubmitMessage(Message_ID){
 	MSG = MessageInput();
@@ -146,7 +146,8 @@ function RemoveEmptyLine(Str, Char="\n"){
 	return Str.join(Char);
 }
 function RemoveDateTime(Content){
-    Content = Content.replaceAll("\n", "<br>").replaceAll("\n\n", "\n");
+    Content = Content.replaceAll("\n", "<br>").replaceAll("<br><br>", "\n");
+    console.log(Content);
 	try{
 		return Content.split("Time:[")[0]+Content.split("Time:[")[1].split("]:: ")[1];
 	}
