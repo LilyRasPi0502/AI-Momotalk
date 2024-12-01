@@ -144,7 +144,6 @@ function RemoveEmptyLine(Str, Char="\n"){
 	Str = [];
 	for(i=0;i<lines.length;i++){//line of lines){
 		if(lines[i].length != 0){//((line.trim() != "") && ){
-		    console.log("len="+lines[i].length+"\tline="+lines[i]);
 		    Str.push(lines[i]);
 		}
 		else if(i<lines.length-1){
@@ -153,8 +152,11 @@ function RemoveEmptyLine(Str, Char="\n"){
             }
 		}
 	}
-	if(Str[0].trim() == ""){
-	    Str.pop();
+	for(i=0;i<Str.length;i++){
+	    	if(Str[i].length == 0){
+		    console.log("i="+i+"\tlen="+Str[i].length+"\tStr="+Str[i]);
+	        Str.splice(i,1);
+	    }
 	}
 	return Str.join(Char);
 }
