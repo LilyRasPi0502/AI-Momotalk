@@ -37,3 +37,6 @@ Ollama based momotalk AI chat
 ***Mobile:***<br>
 <img width=50% src=https://github.com/user-attachments/assets/cbd73d80-744e-4529-971f-4ad9ab94260e><img width=50% src=https://github.com/user-attachments/assets/7cb2a376-6521-4629-93cd-43f87235fc34>
 
+# 更新日誌
+- [20241201] 針對ChatUI.js、Prompt.js、m/ChatUI.js等文件進行美工更新(upgrade UI ChatUI.js、Prompt.js、m/ChatUI.js file)
+
