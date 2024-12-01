@@ -5,6 +5,7 @@ function ChatViewer(Name, Content){
 		return;
 	}
 	Chat = document.getElementById("Chat");
+	Content = Content.replace("\n", "<br>").replace("\n\n", "\n");
 	Str = Content.split("\n");
 	Content = "";
 	for(i=0; i<Str.length; i++){
@@ -16,6 +17,7 @@ function ChatViewer(Name, Content){
 
 function UserChatViewer(Content){
 	Chat = document.getElementById("Chat");
+	Content = Content.replace("\n", "<br>").replace("\n\n", "\n");
 	Str = RemoveDateTime(Content).split("\n");
 	Content = "";
 	for(i=0; i<Str.length; i++){
