@@ -30,8 +30,8 @@ function BackAudioPlay(){
 		case 'hidden':
 			// 使用者不在頁面上時要做的事……
 			if(onClick){
-				//BackAudio.pause();
-				//audio.play();
+				BackAudio.pause();
+				audio.play();
 				
 			}
 			break;
