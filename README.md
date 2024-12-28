@@ -39,4 +39,5 @@ Ollama based momotalk AI chat
 
 # 更新日誌
 - [20241201] 針對ChatUI.js、Prompt.js、m/ChatUI.js等文件進行美工更新(upgrade UI ChatUI.js、Prompt.js、m/ChatUI.js file)
+- [20241228] 針對Style.css、m/Style.css進行美工更新(upgrade UI Style.css、m/Style.css)
 
