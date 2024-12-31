@@ -1,0 +1,27 @@
+#ToastDiv{
+  position: absolute;
+  opacity: 0;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 300;
+}
+#ToastArrow{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #0d0;
+}
+#ToastMSGBox {
+  position: absolute;
+  top: 15px;
+  border-radius: 10px;
+	min-width: 50px;
+	background-color: #0d0;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	font-size: 24px;
+}
