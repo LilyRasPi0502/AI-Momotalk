@@ -41,4 +41,5 @@ Ollama based momotalk AI chat
 - [20241201] 針對ChatUI.js、Prompt.js、m/ChatUI.js等文件進行美工更新(upgrade UI ChatUI.js、Prompt.js、m/ChatUI.js file)
 - [20241228] 針對Style.css、m/Style.css進行美工更新(upgrade UI Style.css、m/Style.css)
 - [20241230] 新增一個分享學生個人檔案連結的按鈕(Added a button to share a link to a student's profile)
+- [20241231] 修改UI(upgrade UI)
 
