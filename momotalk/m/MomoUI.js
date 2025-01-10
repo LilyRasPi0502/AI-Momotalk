@@ -7,6 +7,7 @@ var OnChat = true;
 
 window.onload=function(){
 	Mob();
+	getUpdate();
 	window.history.pushState(null, null, "#");
 	window.onpopstate = function(event) {
 		PageSelect(PageMode);
@@ -169,19 +170,11 @@ function ViewSetting(){
 	else			Mute = "";
 	Str += '<div class="SettingBox" onclick="OnSetting(0);"><span style="font-size:30px;">背景音樂</span><label class="switch"><input type="checkbox" id="MuteCB" disabled'+ Mute +'><span class="slider round"></span></label></div>';
 	
+	if(coojson.Sex)	Sex = " checked";
+	else			Sex = "";
+	Str += '<div class="SettingBox"><span style="font-size:30px;">我要色色</span><label class="switch"><input type="checkbox"'+ Sex +' id="SexCB" onchange="OnSetting(1);"><span class="slider round"></span></label></div>';
+	
 	document.getElementById("StudentListPanel").innerHTML = Str;
-}
-function OnSetting(Option){
-	coojson = JSON.parse(document.cookie);
-	Mute = coojson.Mute;
-	switch(Option){
-		case 0:
-			Mute = !(coojson.Mute);
-			CB = document.getElementById("MuteCB");
-			CB.checked = !(CB.checked);
-			break;
-	}
-	document.cookie = '{"Mute":'+Mute+',"test":true}';
 }
 function MessageEasyViewer(){
 	document.getElementById("StudentListPanel").innerHTML = '';
