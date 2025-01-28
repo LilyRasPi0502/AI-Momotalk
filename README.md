@@ -43,4 +43,6 @@ Ollama based momotalk AI chat
 - [20241230] 新增一個分享學生個人檔案連結的按鈕(Added a button to share a link to a student's profile)
 - [20241231] 修改UI(upgrade UI)
 - [20250110] 新增我要色色設定(Add sex switch)
+- [20250128] 新增版本號控制Cookie強制更新功能(Add update cookie in Version update)
+- [20250128] 今天除夕偷偷更新各位新年快樂(Happy Lunar New Year)
 
