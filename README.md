@@ -45,4 +45,5 @@ Ollama based momotalk AI chat
 - [20250110] 新增我要色色設定(Add sex switch)
 - [20250128] 新增版本號控制Cookie強制更新功能(Add update cookie in Version update)
 - [20250128] 今天除夕偷偷更新各位新年快樂(Happy Lunar New Year)
+- [20250129] 新增正在使用模型的ID顯示(Added using model ID monitor)
 
