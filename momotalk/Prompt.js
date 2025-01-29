@@ -1,4 +1,5 @@
-var version = "114.01.28.1143";
+var version = "114.01.29.1333";
+var Model = "llama3.1:8b";
 //原本版本號我想寫114514來哼哼哼啊啊啊啊啊啊阿的
 
 function mobile(){
@@ -165,7 +166,7 @@ function Genarate(Message_ID){
 	for(i=0; i<ChatData.data[Message_ID].prompt.length; i++)h.push(ChatData.data[Message_ID].prompt[i]);
 
 	
-	getText(Server+"api/chat", {"model": "gemma2", "messages": h, "stream": false, "Access-Control-Allow-Origin": "*", 'Access-Control-Allow-Headers': '*'}, Message_ID);
+	getText(Server+"api/chat", {"model": Model, "messages": h, "stream": false, "Access-Control-Allow-Origin": "*", 'Access-Control-Allow-Headers': '*'}, Message_ID);
 
 }
 function RemoveEmptyLine(Str, Char="\n"){
