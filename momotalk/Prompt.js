@@ -1,6 +1,5 @@
-var version = "114.01.29.1333";
-var Model = "llama3.1:8b";
-//原本版本號我想寫114514來哼哼哼啊啊啊啊啊啊阿的
+var version = "114.02.07.2042";
+var Model = "gemma2";//"huihui_ai/deepseek-r1-abliterated:14b";
 
 function mobile(){
 	try{
@@ -12,7 +11,7 @@ function mobile(){
 	}
 }
 function getUpdate(){
-    eatCookie();
+	eatCookie();
 }
 function eatCookie(){
 	dfcookie = '{"Mute":true, "Sex":false, "Version": "'+ version +'", "test":false}'
