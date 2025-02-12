@@ -1,5 +1,18 @@
-var version = "114.02.07.2042";
+var version = "114.02.12.2132";
 var Model = "gemma2";//"huihui_ai/deepseek-r1-abliterated:14b";
+
+var audio = new Audio("sound/Beast_Senior.wav"), onClick = false, Clicked = false;
+var BackAudio = new Audio("sound/ブルーアーカイブ Blue Archive OST 14. Step by Step.wav");
+var ChatData = JSON.parse('{ "data" : [] }');
+var StudentData = null;
+var PageMode = 0, Selected = 0;
+var OnChat = true;
+
+
+audio.volume = 0.25;
+BackAudio.volume = 0.45;
+audio.loop = true;
+BackAudio.loop = true;
 
 function mobile(){
 	try{
