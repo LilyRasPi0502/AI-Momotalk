@@ -10,7 +10,12 @@ function ChatViewer(Name, Content){
 	for(i=0; i<Str.length; i++){
 		Content += '<div id="MessageContent" class="MessageContent">' + Str[i] + '</div><br>';
 	}
-	Chat.innerHTML += '<div id="MessageBox" class="MessageBox">' + '<div class="Avatar"><image id="Avatar" src="Avatar/' + Name + '.png" height="70px" width="70px" style="border-radius: 50%;"></div>' + '<div><div id="Name" class="Name font">' + Name + '</div><div class="MessageAllow"></div>' + Content + '</div></div>';
+	if(mobile()){       // mobile
+	    Chat.innerHTML += '<div id="MessageBox" class="MessageBox">' + '<div class="Avatar"><image id="Avatar" src="Avatar/' + Name + '.png" height="100px" width="100px" style="border-radius: 50%;"></div>' + '<div style="width: 100%;"><div id="Name" class="Name font">' + Name + '</div><div class="MessageAllow"></div>' + Content + '</div></div>';
+	}
+	else{
+	    Chat.innerHTML += '<div id="MessageBox" class="MessageBox">' + '<div class="Avatar"><image id="Avatar" src="Avatar/' + Name + '.png" height="70px" width="70px" style="border-radius: 50%;"></div>' + '<div><div id="Name" class="Name font">' + Name + '</div><div class="MessageAllow"></div>' + Content + '</div></div>';
+	}
 	ChatEnd();
 }
 
@@ -28,7 +33,12 @@ function UserChatViewer(Content){
 function Typing(Name){
 	Content = '<div class="TypingDot0"></div><div class="TypingDot1"></div><div class="TypingDot2"></div>';
 	Chat = document.getElementById("Chat");
-	Chat.innerHTML += '<div id="MessageBox" class="MessageBox"><div class="Avatar"><image id="Avatar" src="Avatar/' + Name + '.png" height="70px" width="70px" style="border-radius: 50%;"></div><div><div id="Name" class="Name font">' + Name + '</div><div style="display: inline-block;"><div class="MessageAllow"></div><div style="display:flex;justify-content:flex-end;"><div class="MessageTyping">' + Content + '</div></div></div></div></div>';
+	if(mobile()){       //mobile
+	    Chat.innerHTML += '<div id="MessageBox" class="MessageBox"><div class="Avatar"><image id="Avatar" src="Avatar/' + Name + '.png" height="100px" width="100px" style="border-radius: 50%;"></div><div><div id="Name" class="Name font">' + Name + '</div><div style="display: inline-block;"><div class="MessageAllow"></div><div style="display:flex;justify-content:flex-end;"><div class="MessageTyping">' + Content + '</div></div></div></div></div>';
+	}
+	else{
+	    Chat.innerHTML += '<div id="MessageBox" class="MessageBox"><div class="Avatar"><image id="Avatar" src="Avatar/' + Name + '.png" height="70px" width="70px" style="border-radius: 50%;"></div><div><div id="Name" class="Name font">' + Name + '</div><div style="display: inline-block;"><div class="MessageAllow"></div><div style="display:flex;justify-content:flex-end;"><div class="MessageTyping">' + Content + '</div></div></div></div></div>';
+	}
 	ChatEnd();
 }
 
