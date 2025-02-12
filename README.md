@@ -47,4 +47,5 @@ Ollama based momotalk AI chat
 - [20250128] 今天除夕偷偷更新各位新年快樂(Happy Lunar New Year)
 - [20250129] 新增正在使用模型的ID顯示(Added using model ID monitor)
 - [20250207] 新增版本號顯示(Added using version monitor)
+- [20250212] 整合檔案(Remove unnecessary files)
 
