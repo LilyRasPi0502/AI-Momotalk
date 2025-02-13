@@ -133,7 +133,7 @@ function getStudentName(){
 function ViewStudentList(Mode, StudentIndex){
 	StudentData = StudentIndex;
 	if(mobile()){
-	    document.getElementById("MainPage").innerHTML = '<div class="StudentListTitle"><div id="StudentCount" class="StudentCount font"></div><div id="Filter" class="Filter font" onclick="Filter();">默認</div><div class="FilterAllow"></div><div class="Reverse font" onclick="Reverse();">≡<img src="img/ReverseButton0.png" id="Reverse"><input type="hidden" id="ReverseAllow" value="0"></div></div><div id="StudentListPanel" class="StudentListPanel"></div>';
+	    //document.getElementById("MainPage").innerHTML = '<div class="StudentListTitle"><div id="StudentCount" class="StudentCount font"></div><div id="Filter" class="Filter font" onclick="Filter();">默認</div><div class="FilterAllow"></div><div class="Reverse font" onclick="Reverse();">≡<img src="img/ReverseButton0.png" id="Reverse"><input type="hidden" id="ReverseAllow" value="0"></div></div><div id="StudentListPanel" class="StudentListPanel"></div>';
 	}
 	else{
 	    document.getElementById("StudentList").innerHTML = '<div class="StudentListTitle"><div id="StudentCount" class="StudentCount font"></div><div id="Filter" class="Filter font" onclick="Filter();">默認</div><div class="FilterAllow"></div><div class="Reverse font" onclick="Reverse();">≡<img src="img/ReverseButton0.png" id="Reverse"><input type="hidden" id="ReverseAllow" value="0"></div></div><div id="StudentListPanel" class="StudentListPanel"></div>';
@@ -218,7 +218,7 @@ function ReadMessage(Message_ID){
 		}
 	}
 	if(OnChat){
-		console.log(OnChat);
+		//console.log(OnChat);
 		document.getElementById("StudentCount").innerHTML = "未讀訊息(" + UnReadCount() + ")";
 		MessageEasyViewer();
 	}
