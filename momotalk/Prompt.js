@@ -1,4 +1,4 @@
-var version = "114.02.12.2132";
+var version = "114.02.13.0806";
 var Model = "gemma2";//"huihui_ai/deepseek-r1-abliterated:14b";
 
 var audio = new Audio("sound/Beast_Senior.wav"), onClick = false, Clicked = false;
