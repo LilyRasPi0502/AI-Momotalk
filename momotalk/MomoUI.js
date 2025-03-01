@@ -186,7 +186,7 @@ function ViewSetting(){
 	document.getElementById("StudentListPanel").innerHTML = Str;
 }
 function MessageEasyViewer(){
-	if(!OnChat)  document.getElementById("StudentListPanel").innerHTML = '';
+	document.getElementById("StudentListPanel").innerHTML = '';
 	for(i=0; i<ChatData.data.length; i++){
 		Str = '';
 		if(UnReadMessageCount(i) != 0)Str = '<div style="width:100%;height:90%;"><div  class="UnReadMessage-StudentBox">'+UnReadMessageCount(i)+'</div></div>';
