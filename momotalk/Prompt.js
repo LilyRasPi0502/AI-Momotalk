@@ -1,5 +1,6 @@
-var version = "114.03.01.1138";
-var Model = "gemma2";//"huihui_ai/deepseek-r1-abliterated:14b";
+var version = "114.03.22.2305";
+
+var Model = "gemma3:12b";	//"huihui_ai/deepseek-r1-abliterated:14b";
 
 var audio = new Audio("sound/Beast_Senior.wav"), onClick = false, Clicked = false;
 var BackAudio = new Audio("sound/ブルーアーカイブ Blue Archive OST 14. Step by Step.wav");
