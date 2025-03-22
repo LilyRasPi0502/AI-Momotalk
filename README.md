@@ -49,4 +49,5 @@ Ollama based momotalk AI chat
 - [20250207] 新增版本號顯示(Added using version monitor)
 - [20250212] 整合檔案(Remove unnecessary files)
 - [20250213] 微量修正(Debug)
+- [20250322] 修正建置於不同路徑下無法正確複製分享網址的問題(Fixed an issue where shared URLs cannot be correctly copied when built under different paths)
 
